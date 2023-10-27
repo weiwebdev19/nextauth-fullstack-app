@@ -2,8 +2,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
-import AuthProvider from '@/probiders/auth-provider'
-import ThemeProvider from '@/probiders/theme-provider'
+import AuthProvider from '@/providers/auth-provider'
+import ThemeProvider from '@/providers/theme-provider'
 import Navbar from '@/components/shared/navbar'
 import Footer from '@/components/shared/footer'
 import { Toaster } from '@/components/ui/toaster'
@@ -31,7 +31,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <Navbar />
-            <main className='min-h-screen flex flex-col justify-center items-center'>
+            <main className="min-h-screen flex flex-col justify-center items-center">
               {children}
             </main>
             <Footer />

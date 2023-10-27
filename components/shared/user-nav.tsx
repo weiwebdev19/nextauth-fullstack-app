@@ -26,7 +26,7 @@ const UserNav = async () => {
             <DropdownMenuLabel>My Account</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
-              <Link href="profile">
+              <Link href="/profile">
                 Profile
               </Link>
             </DropdownMenuItem>
