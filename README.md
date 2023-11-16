@@ -1,8 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Next.js 13 全棧身份認證實作 Full Stack Authentication With Next.js 13
+使用 Next.js 13、NextAuth、MongoDB 和 TypeScript 實現全棧認證
+A demo project using Next-Auth for authentication. It connects to MongoDB via Mongoose and supports Google OAuth and email/password logins.
 
-## Getting Started
+## 功能特點 Features
+- OAuth: 可透過 Google 帳號進行登錄。
+- OAuth: Log in with Google.
 
-First, run the development server:
+- 註冊功能: 可以用名稱、電子郵件、密碼註冊帳戶。
+- SignUp: Register with name, email, password.
+
+- 憑證登入: 使用電子郵件和密碼進行登入。
+- Credential Login: Use email and password.
+
+- 個人資料編輯: 變更用戶資料。
+- Profile Edit: Change user details.
+
+- 修改密碼: 安全地更新密碼。
+- Password Change: Safely update passwords.
+
+- 安全路由: 僅供已登入的用戶或管理員存取。
+- Secure Routes: Access only for logged-in users / admins.
+
+## 設定環境變數 Setting Up Environment Variables
+在根目錄下建立.env檔案並加入以下變數：
+Create a .env file in the root directory and add the following variables:
+
+```env
+NEXTAUTH_URL="http://localhost:3000"
+NEXTAUTH_SECRET="YOUR_NEXTAUTH_SECRET"
+
+GOOGLE_CLIENT_ID="YOUR_GOOGLE_CLIENT_ID"
+GOOGLE_CLIENT_SECRET="YOUR_GOOGLE_CLIENT_SECRET"
+
+MONGODB_URI="YOUR_MONGODB_URI"
+```
+
+## 運行專案 Getting Started
 
 ```bash
 npm run dev
@@ -10,27 +43,4 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
