@@ -49,7 +49,7 @@ const SignUpForm = ({
     // console.log(values)
     const res = await signUpWithCredentials(values)
 
-    if (res.success) {
+    if (res?.success) {
       toast({
         description: "Sign up successfully."
       })

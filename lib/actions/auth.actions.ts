@@ -1,3 +1,5 @@
+"use server"
+
 import { getServerSession } from "next-auth/next"
 import { Account, Profile } from "next-auth"
 import { redirect } from "next/navigation"
@@ -70,7 +72,6 @@ export interface UpdateUserProfileParams {
 export async function updateUserProfile({
   name
 }: UpdateUserProfileParams) {
-  "use server"
   const session = await getServerSession(nextauthOptions)
   // console.log(session)
 
@@ -106,7 +107,6 @@ export async function signUpWithCredentials ({
   email,
   password
 }: SignUpWithCredentialsParams) {
-  "use server"
   connectDB()
 
   try {
@@ -172,7 +172,6 @@ export async function changeUserPassword ({
   oldPassword,
   newPassword
 }: ChangeUserPasswordParams) {
-  "use server"
   const session = await getServerSession(nextauthOptions)
   // console.log(session)
 
