@@ -1,5 +1,5 @@
 ## Next.js 13 全棧身份認證實作 Full Stack Authentication With Next.js 13
-使用 Next.js 13、NextAuth、MongoDB 和 TypeScript 實現全棧認證
+使用 Next.js 13、NextAuth.js、MongoDB、TypeScript 和 Server Actions 實現全棧認證
 A demo project using Next-Auth for authentication. It connects to MongoDB via Mongoose and supports Google OAuth and email/password logins.
 
 ## 功能特點 Features
@@ -22,8 +22,8 @@ A demo project using Next-Auth for authentication. It connects to MongoDB via Mo
 - Secure Routes: Access only for logged-in users / admins.
 
 ## 設定環境變數 Setting Up Environment Variables
-在根目錄下建立.env檔案並加入以下變數：
-Create a .env file in the root directory and add the following variables:
+在根目錄下建立 .env.local 並加入以下變數：
+Create a .env.local file in the root directory and add the following variables:
 
 ```env
 NEXTAUTH_URL="http://localhost:3000"
@@ -35,7 +35,7 @@ GOOGLE_CLIENT_SECRET="YOUR_GOOGLE_CLIENT_SECRET"
 MONGODB_URI="YOUR_MONGODB_URI"
 ```
 
-## 運行專案 Getting Started
+## 本地運行專案 Getting Started
 
 ```bash
 npm run dev
