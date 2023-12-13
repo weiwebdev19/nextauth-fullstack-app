@@ -6,20 +6,26 @@ A demo project using Next-Auth for authentication. It connects to MongoDB via Mo
 - OAuth: 可透過 Google 帳號進行登錄。
 - OAuth: Log in with Google.
 
+
 - 註冊功能: 可以用名稱、電子郵件、密碼註冊帳戶。
 - SignUp: Register with name, email, password.
+
 
 - 憑證登入: 使用電子郵件和密碼進行登入。
 - Credential Login: Use email and password.
 
+
 - 個人資料編輯: 變更用戶資料。
 - Profile Edit: Change user details.
+
 
 - 修改密碼: 安全地更新密碼。
 - Password Change: Safely update passwords.
 
+
 - 安全路由: 僅供已登入的用戶或管理員存取。
 - Secure Routes: Access only for logged-in users / admins.
+
 
 ## 設定環境變數 Setting Up Environment Variables
 在根目錄下建立 .env.local 並加入以下變數：
