@@ -1,4 +1,4 @@
-"use server"
+"use server" // 開頭統一加上"use server"即可
 
 import { getServerSession } from "next-auth/next"
 import { Account, Profile } from "next-auth"
