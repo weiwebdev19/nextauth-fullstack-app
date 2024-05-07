@@ -51,6 +51,7 @@ const SignUpForm = ({
 
     if (res?.success) {
       toast({
+        status: "success",
         description: "Sign up successfully."
       })
       router.push("/signin")

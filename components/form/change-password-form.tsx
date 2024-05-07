@@ -54,6 +54,7 @@ const ChangePasswordForm = ({
     
     if (res?.success) {
       toast({
+        status: "success",
         title: "Change password successfully.",
         description: "You are being signed out..."
       })

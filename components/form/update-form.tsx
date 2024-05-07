@@ -48,6 +48,7 @@ const UpdateForm = ({
     
     if (res?.success) {
       toast({
+        status: "success",
         description: "Update successfully."
       })
     }
