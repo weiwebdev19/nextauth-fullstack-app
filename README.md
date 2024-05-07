@@ -1,5 +1,6 @@
 ## Next.js 13 全棧身份認證實作 Full Stack Authentication With Next.js 13
 使用 Next.js 13、NextAuth.js、MongoDB、Mongoos、TypeScript 和 Server Actions 實現全棧認證
+
 A demo project using Next-Auth for authentication. It connects to MongoDB via Mongoose and supports Google OAuth and email/password logins.
 
 ## 功能特點 Features
